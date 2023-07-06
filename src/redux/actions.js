@@ -2,7 +2,7 @@ import { nanoid } from "nanoid";
 
 export const addTask = (text) => {
   return {
-    type: "tasks/addTasks",
+    type: "tasks/addTask",
     payload: {
       id: nanoid(),
       completed: false,
@@ -20,7 +20,7 @@ export const deleteTask = (taskId) => {
 
 export const toggleCompleted = (taskId) => {
   return {
-    tupe: "tasks/toggleCompleted",
+    type: "tasks/toggleCompleted",
     payload: taskId,
   };
 };
